@@ -1,9 +1,9 @@
 {
-	"name": "boboplus",
+	"name": "play",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
 	"private": "true",
+	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
@@ -11,8 +11,7 @@
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
-		"less": "^4.2.0",
-		"typescript": "^5.4.2",
-		"vue": "^3.4.21"
+		"@vitejs/plugin-vue": "^5.0.4",
+		"vite": "^5.1.5"
 	}
 }
