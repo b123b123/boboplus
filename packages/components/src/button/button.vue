@@ -4,11 +4,18 @@
  * @Author: WangBo
  * @Date: 2024-03-11 15:50:15
  * @LastEditors: WangBo
- * @LastEditTime: 2024-03-11 16:01:34
+ * @LastEditTime: 2024-03-11 16:41:18
 -->
 <template>
 	<button>测试按钮</button>
 </template>
+
+<script lang="ts">
+import { defineComponent } from "vue";
+export default defineComponent({
+	name: "bo-button",
+});
+</script>
 
 <script setup lang="ts"></script>
 

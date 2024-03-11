@@ -1,4 +1,15 @@
-import Input from "./input.vue";
+import _Input from "./input.vue";
+import type { App, Plugin } from "vue";
 
-export { Input };
+type SFCWithInstall<T> = T & Plugin;
+const withInstall = <T>(comp: T) => {
+	(comp as SFCWithInstall<T>).install = (app: App) => {
+		const name = (comp as any).name;
+		//注册组件
+		app.component(name, comp as SFCWithInstall<T>);
+	};
+	return comp as SFCWithInstall<T>;
+};
+
+export const Input = withInstall(_Input);
 export default Input;
