@@ -12,6 +12,7 @@
 	"license": "ISC",
 	"devDependencies": {
 		"@vitejs/plugin-vue": "^5.0.4",
+		"@vue/runtime-core": "^3.4.21",
 		"less": "^4.2.0",
 		"typescript": "^5.4.2",
 		"unplugin-vue-define-options": "^1.4.2",
