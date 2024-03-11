@@ -4,19 +4,16 @@
  * @Author: WangBo
  * @Date: 2024-03-11 15:51:14
  * @LastEditors: WangBo
- * @LastEditTime: 2024-03-11 16:41:04
+ * @LastEditTime: 2024-03-11 16:51:08
 -->
 <template>
-	<div>input</div>
+	<input type="text" placeholder="请输入组件名称" />
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
-export default defineComponent({
+<script setup lang="ts">
+defineOptions({
 	name: "bo-input",
 });
 </script>
-
-<script setup lang="ts"></script>
 
 <style scoped></style>

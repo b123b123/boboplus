@@ -4,7 +4,7 @@
  * @Author: WangBo
  * @Date: 2024-03-08 09:58:55
  * @LastEditors: WangBo
- * @LastEditTime: 2024-03-08 11:28:08
+ * @LastEditTime: 2024-03-11 16:47:24
  */
 import { defineConfig } from "vite";
 import sharedConfig from "../vite.config.shared"; // 导入共享配置
