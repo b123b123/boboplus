@@ -4,7 +4,7 @@
  * @Author: WangBo
  * @Date: 2024-03-08 09:58:55
  * @LastEditors: WangBo
- * @LastEditTime: 2024-03-12 14:22:32
+ * @LastEditTime: 2024-03-12 14:28:33
  */
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
@@ -29,8 +29,8 @@ export default defineConfig({
 		},
 		lib: {
 			entry: "./index.ts",
-			name: "easyest",
-			fileName: "easyest",
+			name: "boboplus",
+			fileName: "boboplus",
 			formats: ["es", "umd", "cjs"],
 		},
 	},
