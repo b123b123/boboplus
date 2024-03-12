@@ -1,8 +1,8 @@
 import { defineComponent, computed, openBlock, createElementBlock, normalizeClass, renderSlot } from "vue";
 import "./index.less.mjs";
+const __default__ = defineComponent({ name: "bo-button" });
 const _sfc_main = /* @__PURE__ */ defineComponent({
-  ...{ name: "bo-button" },
-  __name: "button",
+  ...__default__,
   props: {
     type: {}
   },

@@ -4,10 +4,12 @@
  * @Author: WangBo
  * @Date: 2024-03-08 09:58:55
  * @LastEditors: WangBo
- * @LastEditTime: 2024-03-12 14:35:38
+ * @LastEditTime: 2024-03-12 14:53:55
  */
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
+import dts from "vite-plugin-dts";
+import DefineOptions from "unplugin-vue-define-options/vite";
 
 export default defineConfig({
 	// 子目录的配置项
@@ -49,5 +51,14 @@ export default defineConfig({
 			entry: "./index.ts",
 		},
 	},
-	plugins: [vue()],
+	plugins: [
+		vue(),
+		dts({
+			entryRoot: "./src",
+			outputDir: ["../boboplus/es/src", "../boboplus/lib/src"],
+			//指定使用的tsconfig.json为我们整个项目根目录下,如果不配置,你也可以在components下新建tsconfig.json
+			tsConfigFilePath: "../../tsconfig.json",
+		}),
+		DefineOptions(),
+	],
 });

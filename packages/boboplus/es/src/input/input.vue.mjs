@@ -3,11 +3,11 @@ const _hoisted_1 = {
   type: "text",
   placeholder: "请输入组件名称"
 };
+const __default__ = defineComponent({
+  name: "bo-input"
+});
 const _sfc_main = /* @__PURE__ */ defineComponent({
-  ...{
-    name: "bo-input"
-  },
-  __name: "input",
+  ...__default__,
   setup(__props) {
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("input", _hoisted_1);
