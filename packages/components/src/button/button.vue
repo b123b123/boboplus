@@ -4,10 +4,10 @@
  * @Author: WangBo
  * @Date: 2024-03-11 15:50:15
  * @LastEditors: WangBo
- * @LastEditTime: 2024-03-11 17:40:29
+ * @LastEditTime: 2024-03-12 14:39:50
 -->
 <template>
-	<button class="ea-button" :class="buttonStyle"><slot /></button>
+	<button class="bo-button" :class="buttonStyle"><slot /></button>
 </template>
 
 <script lang="ts" setup>
@@ -22,7 +22,7 @@ type ButtonProps = {
 const buttonProps = defineProps<ButtonProps>();
 
 const buttonStyle = computed(() => {
-	return { [`ea-button--${buttonProps.type}`]: buttonProps.type };
+	return { [`bo-button--${buttonProps.type}`]: buttonProps.type };
 });
 </script>
 

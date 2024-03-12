@@ -11,11 +11,11 @@ const _sfc_main = /* @__PURE__ */ vue.defineComponent({
   setup(__props) {
     const buttonProps = __props;
     const buttonStyle = vue.computed(() => {
-      return { [`ea-button--${buttonProps.type}`]: buttonProps.type };
+      return { [`bo-button--${buttonProps.type}`]: buttonProps.type };
     });
     return (_ctx, _cache) => {
       return vue.openBlock(), vue.createElementBlock("button", {
-        class: vue.normalizeClass(["ea-button", buttonStyle.value])
+        class: vue.normalizeClass(["bo-button", buttonStyle.value])
       }, [
         vue.renderSlot(_ctx.$slots, "default")
       ], 2);

@@ -1,4 +1,4 @@
-.ea-button {
+.bo-button {
   display: inline-block;
   line-height: 1;
   white-space: nowrap;
@@ -17,12 +17,12 @@
   font-size: 14px;
   border-radius: 4px;
 }
-.ea-button.ea-button--primary {
+.bo-button.bo-button--primary {
   color: #fff;
   background-color: #409eff;
   border-color: #409eff;
 }
-.ea-button.ea-button--primary:hover {
+.bo-button.bo-button--primary:hover {
   background: #66b1ff;
   border-color: #66b1ff;
   color: #fff;
