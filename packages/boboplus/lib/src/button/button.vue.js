@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperties(exports, { __esModule: { value: true }, [Symbol.toStringTag]: { value: "Module" } });
 const vue = require("vue");
-require("./index.less");
+require("./index.css");
 const __default__ = vue.defineComponent({ name: "bo-button" });
 const _sfc_main = /* @__PURE__ */ vue.defineComponent({
   ...__default__,
