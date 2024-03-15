@@ -1,19 +1,7 @@
 "use strict";
 Object.defineProperties(exports, { __esModule: { value: true }, [Symbol.toStringTag]: { value: "Module" } });
-const vue = require("vue");
-const _hoisted_1 = {
-  type: "text",
-  placeholder: "请输入组件名称"
-};
-const __default__ = vue.defineComponent({
-  name: "bo-input"
-});
-const _sfc_main = /* @__PURE__ */ vue.defineComponent({
-  ...__default__,
-  setup(__props) {
-    return (_ctx, _cache) => {
-      return vue.openBlock(), vue.createElementBlock("input", _hoisted_1);
-    };
-  }
-});
-exports.default = _sfc_main;
+const input_vue_vue_type_script_setup_true_lang = require("./input.vue2.js");
+require("./input.vue3.js");
+const _pluginVue_exportHelper = require("../../_virtual/_plugin-vue_export-helper.js");
+const _Input = /* @__PURE__ */ _pluginVue_exportHelper.default(input_vue_vue_type_script_setup_true_lang.default, [["__scopeId", "data-v-3f9eab94"]]);
+exports.default = _Input;

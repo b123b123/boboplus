@@ -1,19 +1,7 @@
-import { defineComponent, openBlock, createElementBlock } from "vue";
-const _hoisted_1 = {
-  type: "text",
-  placeholder: "请输入组件名称"
-};
-const __default__ = defineComponent({
-  name: "bo-input"
-});
-const _sfc_main = /* @__PURE__ */ defineComponent({
-  ...__default__,
-  setup(__props) {
-    return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("input", _hoisted_1);
-    };
-  }
-});
+import _sfc_main from "./input.vue2.mjs";
+import "./input.vue3.mjs";
+import _export_sfc from "../../_virtual/_plugin-vue_export-helper.mjs";
+const _Input = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-3f9eab94"]]);
 export {
-  _sfc_main as default
+  _Input as default
 };
