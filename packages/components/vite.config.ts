@@ -4,7 +4,7 @@
  * @Author: WangBo
  * @Date: 2024-03-08 09:58:55
  * @LastEditors: WangBo
- * @LastEditTime: 2024-03-15 17:03:21
+ * @LastEditTime: 2024-03-15 17:04:48
  */
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
