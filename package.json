@@ -7,16 +7,20 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"dev": "pnpm -F play dev",
-		"build": "pnpm -F @boboplus/components build"
+		"build": "pnpm -F @boboplus/components build",
+		"remove": "gulp -f packages/components/script/build/index.ts"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
+		"@types/gulp": "^4.0.17",
 		"@types/node": "^20.11.27",
 		"@vitejs/plugin-vue": "^5.0.4",
 		"@vue/runtime-core": "^3.4.21",
+		"gulp": "^4.0.2",
 		"less": "^4.2.0",
+		"sucrase": "^3.35.0",
 		"typescript": "^5.4.2",
 		"unplugin-vue-define-options": "^1.4.2",
 		"vite": "^5.1.5",
