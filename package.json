@@ -7,8 +7,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"dev": "pnpm -F play dev",
-		"build": "pnpm -F @boboplus/components build",
-		"remove-boboplus": "gulp -f packages/components/script/build/index.ts"
+		"build": "gulp -f packages/components/script/build/index.ts"
 	},
 	"keywords": [],
 	"author": "",
