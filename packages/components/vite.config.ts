@@ -4,7 +4,7 @@
  * @Author: WangBo
  * @Date: 2024-03-08 09:58:55
  * @LastEditors: WangBo
- * @LastEditTime: 2024-03-12 14:53:55
+ * @LastEditTime: 2024-03-15 16:26:09
  */
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
@@ -20,7 +20,7 @@ export default defineConfig({
 		minify: false,
 		rollupOptions: {
 			//忽略打包vue文件
-			external: ["vue"],
+			external: ["vue", /\.less/],
 			input: ["index.ts"],
 			output: [
 				{
