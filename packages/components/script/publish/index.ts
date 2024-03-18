@@ -4,21 +4,23 @@
  * @Author: WangBo
  * @Date: 2024-03-18 09:11:48
  * @LastEditors: WangBo
- * @LastEditTime: 2024-03-18 10:51:39
+ * @LastEditTime: 2024-03-18 11:04:37
  */
 import run from "../utils/run";
 import { pkgPath } from "../utils/paths";
-import { series, src, dest } from "gulp";
-import rename from "gulp-rename";
+import copyAndRenameFile from "../utils/copyAndRenameFile";
+import { series } from "gulp";
 
-export const copyPkg = async () => {
-	return src("./release.json")
-		.pipe(rename("package.json"))
-		.pipe(dest(`${pkgPath}/boboplus`));
-};
+// 生成包管理器
+const sourcePath = "release.json"; // 源文件路径
+const destinationPath = `${pkgPath}/boboplus`; // 目标文件夹路径
+const newFilename = "package.json"; // 新文件名
 
 export const publishComponent = async () => {
 	run("release-it", `${pkgPath}/boboplus`);
 };
 
-export default series(copyPkg, async () => publishComponent());
+export default series(
+	async () => copyAndRenameFile(sourcePath, destinationPath, newFilename),
+	async () => publishComponent()
+);
