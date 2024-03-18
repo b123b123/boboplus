@@ -4,14 +4,14 @@
  * @Author: WangBo
  * @Date: 2024-03-18 09:11:48
  * @LastEditors: WangBo
- * @LastEditTime: 2024-03-18 10:29:16
+ * @LastEditTime: 2024-03-18 10:42:35
  */
 import run from "../utils/run";
 import { pkgPath } from "../utils/paths";
 import { series, src, dest } from "gulp";
 
 export const copyPkg = async () => {
-	return src("./package.json").pipe(dest(`${pkgPath}/boboplus`));
+	return src("./release.json").pipe(dest(`${pkgPath}/boboplus`));
 };
 
 export const publishComponent = async () => {
