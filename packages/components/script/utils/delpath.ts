@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { pkgPath } from "./paths";
 
 function deleteFolderRecursive(folderPath: string) {
 	if (fs.existsSync(folderPath)) {
@@ -10,10 +11,14 @@ function deleteFolderRecursive(folderPath: string) {
 				deleteFolderRecursive(curPath);
 			} else {
 				// delete file
-				fs.unlinkSync(curPath);
+				if (curPath !== path.join(pkgPath, "boboplus", "package.json")) {
+					fs.unlinkSync(curPath);
+				}
 			}
 		});
-		fs.rmdirSync(folderPath);
+		if (folderPath !== path.join(pkgPath, "boboplus")) {
+			fs.rmdirSync(folderPath);
+		}
 	}
 }
 
