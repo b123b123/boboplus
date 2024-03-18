@@ -1,5 +1,5 @@
 node_modules
 packages/**/node_modules
 pnpm-lock.yaml
-packages/boboplus
+packages/boboplus/**/**
 !packages/boboplus/package.json
