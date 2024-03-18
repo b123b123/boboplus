@@ -4,7 +4,7 @@
  * @Author: WangBo
  * @Date: 2024-03-18 09:11:48
  * @LastEditors: WangBo
- * @LastEditTime: 2024-03-18 11:04:37
+ * @LastEditTime: 2024-03-18 11:11:03
  */
 import run from "../utils/run";
 import { pkgPath } from "../utils/paths";
@@ -22,5 +22,6 @@ export const publishComponent = async () => {
 
 export default series(
 	async () => copyAndRenameFile(sourcePath, destinationPath, newFilename),
-	async () => publishComponent()
+	async () => publishComponent(),
+	async () => copyAndRenameFile(destinationPath + newFilename, "./", sourcePath)
 );
