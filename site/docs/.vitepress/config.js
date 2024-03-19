@@ -1,6 +1,6 @@
 export default {
+	base: process.env.NODE_ENV === "production" ? "/boboplus/" : "/",
 	themeConfig: {
-		base: "./",
 		siteTitle: "boboplus",
 		nav: [
 			{ text: "指南", link: "/guild/" },
