@@ -13,11 +13,11 @@ export default {
 					items: [
 						{
 							text: "安装",
-							link: "/guild/installation",
+							link: "/guild/installation/index.md",
 						},
 						{
 							text: "快速开始",
-							link: "/guild/quickstart",
+							link: "/guild/quickstart.md",
 						},
 					],
 				},
@@ -26,7 +26,7 @@ export default {
 					items: [
 						{
 							text: "进阶一",
-							link: "/more/moreOne",
+							link: "/guild/more/moreone.md",
 						},
 					],
 				},
@@ -37,7 +37,7 @@ export default {
 					items: [
 						{
 							text: "Button",
-							link: "/components/button",
+							link: "/components/button/index.md",
 						},
 					],
 				},
