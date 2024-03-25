@@ -7,9 +7,7 @@ module.exports = {
         "stylelint-config-standard",
         "stylelint-config-recommended-less",
         // 样式属性顺序规则
-        "stylelint-config-recess-order",
-        // 接入 Prettier 规则
-        "stylelint-config-prettier"
+        "stylelint-config-recess-order"
     ],
     // 配置 rules
     rules: {
