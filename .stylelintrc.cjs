@@ -12,7 +12,8 @@ module.exports = {
     // 配置 rules
     rules: {
         // 开启 Prettier 自动格式化功能
-        "prettier/prettier": true
+        "prettier/prettier": true,
+        "selector-class-pattern": "^([a-z][a-z0-9]*)(--?[a-z0-9]+)*$"
     },
     ignoreFiles: ["dist/**/", "./packages/boboplus/**/", "node_modules/**/"]
 };
