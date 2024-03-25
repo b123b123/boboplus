@@ -9,12 +9,12 @@ module.exports = {
         // 样式属性顺序规则
         "stylelint-config-recess-order",
         // 接入 Prettier 规则
-        "stylelint-config-prettier",
-        "stylelint-prettier/recommended"
+        "stylelint-config-prettier"
     ],
     // 配置 rules
     rules: {
         // 开启 Prettier 自动格式化功能
         "prettier/prettier": true
-    }
+    },
+    ignoreFiles: ["dist/**/", "./packages/boboplus/**/", "node_modules/**/"]
 };

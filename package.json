@@ -10,7 +10,7 @@
         "build": "gulp -f packages/components/script/build/index.ts",
         "publish:boboplus": "pnpm build && gulp -f packages/components/script/publish/index.ts",
         "lint:script": "eslint --ext .js,.jsx,.vue,.ts,.tsx --fix --quiet ./",
-        "lint:style": "stylelint --fix \"*.{css,less}\""
+        "lint:style": "stylelint --fix \"./**/*.{css,less}\""
     },
     "keywords": [],
     "author": "",
