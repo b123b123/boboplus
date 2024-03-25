@@ -17,28 +17,28 @@ import autoprefixer from "gulp-autoprefixer";
 
 //删除 boboplus
 export const removeDist = () => {
-	const folderPath = resolve(pkgPath, "boboplus");
-	return delPath(folderPath);
+    const folderPath = resolve(pkgPath, "boboplus");
+    return delPath(folderPath);
 };
 
 // 打包less样式
 export const buildStyle = () => {
-	return src(`${componentPath}/src/**/**.less`)
-		.pipe(less())
-		.pipe(autoprefixer())
-		.pipe(dest(`${pkgPath}/boboplus/lib/src`))
-		.pipe(dest(`${pkgPath}/boboplus/es/src`));
+    return src(`${componentPath}/src/**/**.less`)
+        .pipe(less())
+        .pipe(autoprefixer())
+        .pipe(dest(`${pkgPath}/boboplus/lib/src`))
+        .pipe(dest(`${pkgPath}/boboplus/es/src`));
 };
 
 //打包组件
 export const buildComponent = async () => {
-	run("pnpm run build", componentPath);
+    run("pnpm run build", componentPath);
 };
 
 export default series(
-	async () => removeDist(),
-	parallel(
-		async () => buildStyle(),
-		async () => buildComponent()
-	)
+    async () => removeDist(),
+    parallel(
+        async () => buildStyle(),
+        async () => buildComponent()
+    )
 );

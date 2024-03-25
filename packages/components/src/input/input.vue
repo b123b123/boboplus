@@ -7,18 +7,18 @@
  * @LastEditTime: 2024-03-15 16:37:47
 -->
 <template>
-	<input type="text" placeholder="请输入组件名称" class="inputClass" />
+    <input type="text" placeholder="请输入组件名称" class="inputClass" />
 </template>
 
 <script setup lang="ts">
 defineOptions({
-	name: "bo-input",
+    name: "bo-input"
 });
 </script>
 
 <style scoped>
 .inputClass {
-	text-decoration: line-through;
-	color: aquamarine;
+    text-decoration: line-through;
+    color: aquamarine;
 }
 </style>

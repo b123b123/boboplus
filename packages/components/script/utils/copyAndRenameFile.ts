@@ -10,20 +10,20 @@ import fs from "fs";
 import path from "path";
 
 export default async (sourcePath: string, destinationPath: string, newFilename: string) => {
-	// 读取源文件内容
-	fs.readFile(sourcePath, (err, data) => {
-		if (err) {
-			console.error("Error reading file:", err);
-			return;
-		}
+    // 读取源文件内容
+    fs.readFile(sourcePath, (err, data) => {
+        if (err) {
+            console.error("Error reading file:", err);
+            return;
+        }
 
-		// 将数据写入目标文件并重命名
-		fs.writeFile(path.join(destinationPath, newFilename), data, (err) => {
-			if (err) {
-				console.error("Error writing file:", err);
-				return;
-			}
-			console.log("File copied and renamed successfully!");
-		});
-	});
+        // 将数据写入目标文件并重命名
+        fs.writeFile(path.join(destinationPath, newFilename), data, (err) => {
+            if (err) {
+                console.error("Error writing file:", err);
+                return;
+            }
+            console.log("File copied and renamed successfully!");
+        });
+    });
 };

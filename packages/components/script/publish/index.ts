@@ -11,7 +11,7 @@ import { pkgPath } from "../utils/paths";
 import { series } from "gulp";
 
 export const publishComponent = async () => {
-	run("release-it", `${pkgPath}/boboplus`);
+    run("release-it", `${pkgPath}/boboplus`);
 };
 
 export default series(async () => publishComponent());

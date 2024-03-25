@@ -7,8 +7,8 @@
  * @LastEditTime: 2024-03-11 17:41:53
 -->
 <template>
-	<div>启动测试</div>
-	<bo-button type="primary">启动测试</bo-button>
+    <div>启动测试</div>
+    <bo-button type="primary">启动测试</bo-button>
 </template>
 
 <script setup lang="ts"></script>
