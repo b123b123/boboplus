@@ -1,12 +1,14 @@
 {
-	"name": "@boboplus/components",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"build": "vite build"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC"
+    "name": "@boboplus/components",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "vite build",
+        "test": "vitest",
+        "coverage": "vitest run --coverage"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
 }
