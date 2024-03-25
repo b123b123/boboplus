@@ -6,7 +6,7 @@
     "scripts": {
         "build": "vite build",
         "test": "vitest",
-        "coverage": "vitest --coverage",
+        "test:coverage": "vitest --coverage",
         "test:ui": "vitest --ui"
     },
     "keywords": [],
