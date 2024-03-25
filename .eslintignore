@@ -1,0 +1,4 @@
+**.d.ts
+/packages/boboplus
+dist
+node_modules
