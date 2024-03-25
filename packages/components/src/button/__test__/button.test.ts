@@ -4,7 +4,7 @@
  * @Author: WangBo
  * @Date: 2024-03-25 14:44:20
  * @LastEditors: WangBo
- * @LastEditTime: 2024-03-25 15:32:53
+ * @LastEditTime: 2024-03-25 15:42:33
  */
 import { describe, expect, it } from "vitest";
 import { mount } from "@vue/test-utils";
@@ -27,5 +27,14 @@ describe("test button", () => {
 
         // Assert the rendered text of the component
         expect(wrapper.text()).toContain("boboplus");
+    });
+
+    it("should have class", () => {
+        const wrapper = mount(button, {
+            props: {
+                type: "primary"
+            }
+        });
+        expect(wrapper.classes()).toContain("bo-button--primary");
     });
 });
