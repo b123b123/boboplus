@@ -4,13 +4,14 @@
  * @Author: WangBo
  * @Date: 2024-03-08 09:58:55
  * @LastEditors: WangBo
- * @LastEditTime: 2024-03-15 17:04:48
+ * @LastEditTime: 2024-03-25 16:35:34
  */
 /// <reference types="vitest" />
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import dts from "vite-plugin-dts";
 import DefineOptions from "unplugin-vue-define-options/vite";
+import vueJsx from "@vitejs/plugin-vue-jsx";
 
 export default defineConfig({
     // 子目录的配置项
@@ -55,6 +56,7 @@ export default defineConfig({
     },
     plugins: [
         vue(),
+        vueJsx(),
         dts({
             entryRoot: "./src",
             outputDir: ["../boboplus/es/src", "../boboplus/lib/src"],
