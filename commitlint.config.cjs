@@ -37,5 +37,11 @@ module.exports = {
         "scope-empty": [0],
         "scope-case": [0],
         "header-max-length": [0, "always", 72]
+    },
+    parserPreset: {
+        parserOpts: {
+            headerPattern: /^\[?(\w+)\]?:\s(.*)$/, // 设置提交消息的正则匹配规则，允许方括号包裹类型
+            headerCorrespondence: ["type", "subject"]
+        }
     }
 };
