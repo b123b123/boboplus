@@ -21,7 +21,6 @@ module.exports = {
                 "wip", // 工作进行中的提交
                 "new", // 新功能
                 "style",
-                "fix",
                 "opt",
                 "update"
             ]
