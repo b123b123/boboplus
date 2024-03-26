@@ -9,7 +9,6 @@ module.exports = {
             [
                 "feat", // 新功能
                 "docs", // 文档变更
-                "style", // 格式（不影响代码运行的变动）
                 "refactor", // 重构（即不是新增功能，也不是修改bug的代码变动）
                 "perf", // 性能优化
                 "test", // 增加测试
@@ -20,7 +19,7 @@ module.exports = {
                 "wip", // 工作进行中的提交
                 "new", // 新功能
                 "fix", // 修复
-                "style",
+                "style", // 格式（不影响代码运行的变动）
                 "opt",
                 "update"
             ]
