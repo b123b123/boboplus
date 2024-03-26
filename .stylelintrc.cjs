@@ -15,5 +15,5 @@ module.exports = {
         "prettier/prettier": true,
         "selector-class-pattern": "^([a-z][a-z0-9]*)(--?[a-z0-9]+)*$"
     },
-    ignoreFiles: ["dist/**/", "./packages/boboplus/**/", "node_modules/**/"]
+    ignoreFiles: ["dist/**/", "./packages/boboplus/**/", "node_modules/**/", "./packages/components/coverage/**/"]
 };
