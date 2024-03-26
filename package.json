@@ -17,6 +17,8 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "@commitlint/cli": "^19.2.1",
+        "@commitlint/config-conventional": "^19.1.0",
         "@types/gulp": "^4.0.17",
         "@types/gulp-autoprefixer": "^0.0.37",
         "@types/gulp-less": "^0.0.36",
