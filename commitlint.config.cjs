@@ -8,7 +8,6 @@ module.exports = {
             "always",
             [
                 "feat", // 新功能
-                "fix", // 修复
                 "docs", // 文档变更
                 "style", // 格式（不影响代码运行的变动）
                 "refactor", // 重构（即不是新增功能，也不是修改bug的代码变动）
@@ -20,6 +19,7 @@ module.exports = {
                 "ci", // 持续集成
                 "wip", // 工作进行中的提交
                 "new", // 新功能
+                "fix", // 修复
                 "style",
                 "opt",
                 "update"
