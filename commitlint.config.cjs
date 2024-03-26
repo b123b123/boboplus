@@ -19,7 +19,7 @@ module.exports = {
                 "build", // 打包
                 "ci", // 持续集成
                 "wip", // 工作进行中的提交
-                "[new]",
+                "[new]", // 新功能
                 "[update]",
                 "[style]",
                 "[fix]",
