@@ -12,7 +12,8 @@
         "lint:script": "eslint --ext .js,.jsx,.vue,.ts,.tsx --fix --quiet ./",
         "lint:style": "stylelint --fix \"./**/*.{css,less}\"",
         "prepare": "husky install",
-        "lint-staged": "lint-staged"
+        "lint-staged": "lint-staged",
+        "commitlint": "commitlint --config commitlint.config.cjs -e -V"
     },
     "lint-staged": {
         "./**/*.{js,jsx,ts,tsx,vue}": [

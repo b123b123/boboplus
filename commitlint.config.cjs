@@ -1,5 +1,5 @@
 module.exports = {
-    // extends: ["@commitlint/config-conventional"],
+    extends: ["@commitlint/config-conventional"],
     // 规则集
     rules: {
         // 规则：'type-enum' 定义提交类型的枚举
@@ -23,7 +23,8 @@ module.exports = {
                 "[update]",
                 "[style]",
                 "[fix]",
-                "[opt]"
+                "[opt]",
+                "update"
             ]
         ],
 
@@ -31,23 +32,11 @@ module.exports = {
         "subject-full-stop": [0, "never"],
 
         // 规则：'subject-case' 确保提交信息遵循给定的字符大小写
-        "subject-case": [0, "never"]
-    },
-
-    // 提交规则应用的范围
-    prompt: {
-        messages: {
-            type: "选择一个提交类型",
-            scope: "输入更改影响的范围（可选）",
-            customScope: " Denote the SCOPE of this change (optional)",
-            subject: "简洁地描述更改 (使用英文)",
-            body: "详细描述更改内容（使用英文）(可选)",
-            footer: "列出更改的关联任务或 Breaking Changes (可选)",
-            confirmCommit: "确认提交信息无误?"
-        },
-        // 是否启用范围选择
-        scope: {
-            required: false
-        }
+        "subject-case": [0, "never"],
+        "type-case": [0],
+        "type-empty": [0],
+        "scope-empty": [0],
+        "scope-case": [0],
+        "header-max-length": [0, "always", 72]
     }
 };
