@@ -40,7 +40,7 @@ module.exports = {
     },
     parserPreset: {
         parserOpts: {
-            headerPattern: /^\[?(\w+)\]?:\s(.*)$/, // 设置提交消息的正则匹配规则，允许方括号包裹类型
+            headerPattern: /^\[(\w+)\]:\s(.*)$/, // 设置提交消息的正则匹配规则，允许方括号包裹类型
             headerCorrespondence: ["type", "subject"]
         }
     }
