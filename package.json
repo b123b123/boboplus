@@ -17,7 +17,7 @@
     "lint-staged": {
         "./**/*.{js,jsx,ts,tsx,vue}": [
             "eslint --ext .js,.jsx,.vue,.ts,.tsx --fix --quiet ./",
-            "stylelint --fix \"packages/components/src/**/*.{css,less}\""
+            "stylelint --fix \"./**/*.{css,less}\""
         ]
     },
     "keywords": [],
